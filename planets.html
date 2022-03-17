@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gsap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    
+    <title>Explore | Planets</title>
+</head>
+
+<body onload="loading()" class="planetsbody">
+
+    <div class="clp">
+        <div id='s1'></div>
+        <div id='s2'></div>
+        <div id='s3'></div>
+    </div>
+
+    <div class="lbg"></div>
+    <div class="bgplanets"></div>
+    <div class="loader">
+        <div class="logo">
+            <img src="explore.png" alt="">
+        </div>
+        <div class="progress">
+            <div id="bar">
+                <div id="barc"></div>
+            </div>
+        </div>
+    </div>
+    <div class="lgo">
+        <img src="explore.png" alt="">
+    </div>
+
+    <div class="navigation t-100">
+        <input type="checkbox" class="chk" id="toggle" onclick="chk()">
+        <label for="toggle" class="nbtn">
+            <span class="npre"></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="und">Home</a></li>
+                <li><a href="#" class="und">Planets</a></li>
+                <li><a href="constellations.html" class="und">Constellations</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="homepg">
+            <h1>PLANETS</h1>
+            <div class="planetsbtm"></div>
+            <a href="#start"><div class="scrldown"></div></a>
+        </section>
+
+        <section class="oksec tcent" id="start">
+            <h1>MERCURY</h1>
+            <p>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background mercury"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            2,440 km</li>
+                        <li><b>Surface area:</b>
+                            7.48×10<sup>7</sup> km<sup>2</sup>
+                            (Equivalent to 0.147 Earths)</li>
+                        <li><b>Volume:</b>
+                            6.083×10<sup>10</sup> km<sup>3</sup>
+                            (Equivalent to 0.056 Earths)</li>
+                        <li><b>Mass:</b>
+                            3.301×10<sup>23</sup> kg
+                            (Equivalent to 0.055 Earths)</li>
+                        <li><b>Gravity:</b>
+                            3.7 m/s<sup>2</sup>
+                            (Equivalent to 0.37 Earths)</li>
+                        <li><b>Orbit:</b>
+                            88 Earth days</li>
+                        <li><b>Day:</b>
+                            58.646 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            167 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1>VENUS</h1>
+            <p>Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight.</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background venus"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            6,052 km</li>
+                        <li><b>Surface area:</b>
+                            5.243×10<sup>7</sup> km<sup>2</sup>
+                            (Equivalent to 0.9 Earths)</li>
+                        <li><b>Volume:</b>
+                            1.082×10<sup>11</sup> km<sup>3</sup>
+                            (Equivalent to 1.3 Earths)</li>
+                        <li><b>Mass:</b>
+                            4.867×10<sup>24</sup> kg
+                            (Equivalent to 0.815 Earths)</li>
+                        <li><b>Gravity:</b>
+                            8.87 m/s<sup>2</sup>
+                            (Equivalent to 1.0 Earths)</li>
+                        <li><b>Orbit:</b>
+                            224 Earth days</li>
+                        <li><b>Day:</b>
+                            243.025 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            464 °C</li>    
+                    </ul>
+                </div>
+            </div>
+
+            <h1>Earth</h1>
+            <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large amounts of water can be found throughout the Solar System, only Earth sustains liquid surface water.</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background earth"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            6,371 km</li>
+                        <li><b>Surface area:</b>
+                            5.100×10<sup>7</sup> km<sup>2</sup></li>
+                        <li><b>Volume:</b>
+                            1.082×10<sup>11</sup> km<sup>3</sup></li>
+                        <li><b>Mass:</b>
+                            5.972×10<sup>24</sup> kg</li>
+                        <li><b>Gravity:</b>
+                            9.8 m/s<sup>2</sup></li>
+                        <li><b>Orbit:</b>
+                            365.25 days</li>
+                        <li><b>Day:</b>
+                            30.43 days</li>
+                        <li><b>Mean Temperature:</b>
+                            15 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1>Mars</h1>
+            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background mars"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            3,390 km</li>
+                        <li><b>Surface area:</b>
+                            2.959×10<sup>7</sup> km<sup>2</sup>
+                            (Equivalent to 0.107 Earths)</li>
+                        <li><b>Volume:</b>
+                            6.083×10<sup>10</sup> km<sup>3</sup>
+                            (Equivalent to 0.056 Earths)</li>
+                        <li><b>Mass:</b>
+                            6.39×10<sup>23</sup> kg
+                            (Equivalent to 0.055 Earths)</li>
+                        <li><b>Gravity:</b>
+                            3.7 m/s<sup>2</sup>
+                            (Equivalent to 0.37 Earths)</li>
+                        <li><b>Orbit:</b>
+                            686.98 Earth days</li>
+                        <li><b>Day:</b>
+                            24.62 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            -65 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1>Jupiter</h1>
+            <p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun.</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background jupiter"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            69,911 km</li>
+                        <li><b>Surface area:</b>
+                            1.43×10<sup>10</sup> km<sup>2</sup>
+                            (Equivalent to 0.413 Earths)</li>
+                        <li><b>Volume:</b>
+                            1.43×10<sup>21</sup> km<sup>3</sup>
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Mass:</b>
+                            1.90×10<sup>27</sup> kg
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Gravity:</b>
+                            24.79 m/s<sup>2</sup>
+                            (Equivalent to 0.37 Earths)</li>
+                        <li><b>Orbit:</b>
+                            4.3 Earth years</li>
+                        <li><b>Day:</b>
+                            9.92 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            -110 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1>Saturn</h1>
+            <p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background saturn"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            58,232 km</li>
+                        <li><b>Surface area:</b>
+                            6.683×10<sup>10</sup> km<sup>2</sup>
+                            (Equivalent to 0.913 Earths)</li>
+                        <li><b>Volume:</b>
+                            1.13×10<sup>21</sup> km<sup>3</sup>
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Mass:</b>
+                            5.68×10<sup>26</sup> kg
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Gravity:</b>
+                            10.44 m/s<sup>2</sup>
+                            (Equivalent to 0.37 Earths)</li>
+                        <li><b>Orbit:</b>
+                            29.5 Earth years</li>
+                        <li><b>Day:</b>
+                            10.67 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            -140 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1>Uranus</h1>
+            <p>Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn).</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background uranus"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            25,362 km</li>
+                        <li><b>Surface area:</b>
+                            2.532×10<sup>10</sup> km<sup>2</sup>
+                            (Equivalent to 0.107 Earths)</li>
+                        <li><b>Volume:</b>
+                            8.681×10<sup>18</sup> km<sup>3</sup>
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Mass:</b>
+                            8.68×10<sup>25</sup> kg
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Gravity:</b>
+                            8.87 m/s<sup>2</sup>
+                            (Equivalent to 0.37 Earths)</li>
+                        <li><b>Orbit:</b>
+                            84.01 Earth years</li>
+                        <li><b>Day:</b>
+                            17.24 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            -195 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1>Neptune</h1>
+            <p>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.</p>
+            <div class="planets">
+                <div class="planet"> 
+                    <div class="wrap">
+                    <div class="background neptune"></div>
+                    <div class="clouds"></div>   
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="planetflx">
+                    <ul>
+                        <li><b>Radius:</b>
+                            24,622 km</li>
+                        <li><b>Surface area:</b>
+                            2.46×10<sup>10</sup> km<sup>2</sup>
+                            (Equivalent to 0.107 Earths)</li>
+                        <li><b>Volume:</b>
+                            6.869×10<sup>18</sup> km<sup>3</sup>
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Mass:</b>
+                            1.0243×10<sup>26</sup> kg
+                            (Equivalent to 0.037 Earths)</li>
+                        <li><b>Gravity:</b>
+                            11.15 m/s<sup>2</sup>
+                            (Equivalent to 0.37 Earths)</li>
+                        <li><b>Orbit:</b>
+                            164.79 Earth years</li>
+                        <li><b>Day:</b>
+                            16.11 Earth days</li>
+                        <li><b>Mean Temperature:</b>
+                            -200 °C</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <section class="footer reddishbg">
+        <div class="tfoored"></div>
+        <p>Made by <a href="https://facebook.com/bokaif" target="_blank" class="bk">@bokaif</a></p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gsap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <title>Explore | Home</title>
+</head>
+
+<body onload="loading()">
+
+    <div class="clp">
+        <div id='s1'></div>
+        <div id='s2'></div>
+        <div id='s3'></div>
+    </div>
+
+    <div class="lbg"></div>
+    <div class="bg"></div>
+    <div class="loader">
+        <div class="logo">
+            <img src="explore.png" alt="">
+        </div>
+        <div class="progress">
+            <div id="bar">
+                <div id="barc"></div>
+            </div>
+        </div>
+    </div>
+    <div class="lgo">
+        <img src="explore.png" alt="">
+    </div>
+
+    <div class="navigation t-100">
+        <input type="checkbox" class="chk" id="toggle" onclick="chk()">
+        <label for="toggle" class="nbtn">
+            <span class="npre"></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#" class="und">Home</a></li>
+                <li><a href="planets.html" class="und">Planets</a></li>
+                <li><a href="constellations.html" class="und">Constellations</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="homepg">
+            <h1>Let's Explore Together!</h1>
+            <div class="btm"></div>
+            <a href="#start"><div class="scrldown"></div></a>
+        </section>
+
+        <section class="oksec tcent" id="start">
+            <h1>What will we Explore?</h1>
+            <p>The Universe is vast. We'll be exploring some parts of it. Wihout any further delay let's hop in!</p>
+            <div class="whattoexplore">
+                <div class="flx plfl" onclick="planets()">
+                    <p>Planets</p>
+                </div>
+                
+                <div class="flx cnfl" onclick="constellations()">
+                    <p>Constellations</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="footer">
+        <div class="tfoo"></div>
+        <p>Made by <a href="https://facebook.com/bokaif" target="_blank" class="bk">@bokaif</a></p>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
